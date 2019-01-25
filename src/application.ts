@@ -159,10 +159,6 @@ export class Application {
     } else {
       eventName.forEach(e => this.on(e, callback))
     }
-
-    this.on('security_advisory', async (context) => {
-      return
-    })
   }
 
   /**
